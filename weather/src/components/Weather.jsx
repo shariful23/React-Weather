@@ -27,6 +27,21 @@ export default function Weather() {
     <p className=" text-center text-gray-600 text-3xl">Loading..</p>
   );
 
+  if (data.cod == 404) {
+    return (
+      <>
+        <div className="text-center">
+          <p className="text-2xl  mt-72 font-mono">"{term}" Not Found</p>
+        </div>
+        <div className="text-center">
+          <a className=" rounded-sm bg-red-400 text-white" href="/">
+            Search Again
+          </a>
+        </div>
+      </>
+    );
+  }
+
   return (
     <>
       <Searchbar searchText={termChange} />
