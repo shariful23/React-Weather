@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import Searchbar from "./Searchbar";
-
 export default function Weather() {
   const [isLoading, setIsLoading] = useState(true);
   const [term, setTerm] = useState("Frankfurt");
@@ -14,7 +13,7 @@ export default function Weather() {
     fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${term}&appid=25a17429bf29005fdef33c0b4400b38a&&units=metric`
     )
-      .then((respose) => response.json())
+      .then((response) => response.json())
       .then((data) => {
         console.log(data);
         setData(data);

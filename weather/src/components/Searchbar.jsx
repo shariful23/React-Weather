@@ -7,7 +7,7 @@ export default function Searchbar({ searchText }) {
   };
 
   const submitHandler = (e) => {
-    if (text.length> 0) {
+    if (text.length > 0) {
       e.preventDefault();
       searchText(text);
     }
@@ -16,14 +16,14 @@ export default function Searchbar({ searchText }) {
   return (
     <>
       <form onSubmit={submitHandler}>
-        <div className=" place-content-center p-4 m-4  rounded-md flex items-center">
+        <div className=" custom place-content-center sm:ml-32 pt-4 pb-4 rounded-md flex  ">
           <div>
             <input
               type="text"
               placeholder="e.g. London"
               onChange={changeHandler}
               name="search"
-              className="bg-white peer-invalid:visible border border-slate-400 lg:text-lg rounded-md py-2 pl-5 pr-64 shadow-sm  focus:outline-none focus:ring-sky-500 focus:border-sky-300"
+              className="bg-white  peer-invalid:visible border border-slate-400 lg:text-lg rounded-md py-2 pl-5 sm:pl-0 pr-64 sm:pr-4 shadow-sm  focus:outline-none focus:ring-sky-500 focus:border-sky-300"
             />
           </div>
           <div>

@@ -1,0 +1,47 @@
+/* .first{
+    margin-top: 4rem;
+} */
+
+
+@media (max-width: 550px) {
+    .custom{
+        width: 100%;
+        margin: auto !important;
+        align-items: center;
+    }
+    
+}
+
+
+@media (max-width: 750px) {
+    .first{
+        margin-top: 1rem;
+        padding-left: 1rem;
+        margin: auto;
+        max-width: 100%;
+
+    }
+    
+}
+
+@media (max-width: 550px) {
+    .first{
+        margin-top: 1rem;
+        padding-left: 1rem;
+        max-width: 100%;
+        margin: auto;
+
+    }
+    
+}
+@media (max-width: 450px) {
+    .first{
+        margin-top: 0.5rem;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+
+
+    }
+    
+}

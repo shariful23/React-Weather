@@ -1,8 +1,9 @@
 import logo from "../assets/logo.jpg";
+import './overall.css';
 export default function Header() {
   return (
-    <div className="mt-64 ">
-      <div className="p-6 max-w-xl mx-auto bg-white rounded-xl shadow-lg flex items-center">
+    <div className="first">
+      <div className="mt-16 mb-4 w-full p-6 max-w-xl sm:max-w-sm sm:flex justify-center sm:min-w-0.5 mx-auto bg-white rounded-xl shadow-lg flex items-center">
         <div className="shrink-0">
           <img className="h-16 w-16" src={logo} alt="React Logo" />
         </div>
