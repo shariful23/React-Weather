@@ -14,7 +14,7 @@ export default function Weather() {
     fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${term}&appid=25a17429bf29005fdef33c0b4400b38a&&units=metric`
     )
-      .then((res) => res.json())
+      .then((respose) => response.json())
       .then((data) => {
         console.log(data);
         setData(data);
