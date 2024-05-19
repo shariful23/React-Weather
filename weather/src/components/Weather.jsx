@@ -50,7 +50,7 @@ export default function Weather() {
         <div class="max-w-4xl mx-auto py-4 rounded-lg overflow-hidden shadow-lg bg-white">
           <div class="px-6 py-4 bg-gray-800 text-white rounded-se-xl rounded-ss-xl">
             <div class="font-normal text-2xl font-mono">
-              {data.name}, {data.sys.country}
+              {data.name}, {data.sys.country} 
             </div>
           </div>
 
@@ -61,7 +61,7 @@ export default function Weather() {
                 <h2> {data.main.temp.toFixed(0)} °C</h2>
               </div>
               <div class="text-gray-700 text-2xl mt-2">
-                {data.weather[0].description}
+                {data.weather[0].main}, {data.weather[0].description}
               </div>
             </div>
 
