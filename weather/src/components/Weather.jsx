@@ -49,7 +49,7 @@ export default function Weather() {
       ) : (
         <div class="max-w-4xl mx-auto py-4 rounded-lg overflow-hidden shadow-lg bg-white">
           <div class="px-6 py-4 bg-gray-800 text-white rounded-se-xl rounded-ss-xl">
-            <div class="font-bold text-2xl font-mono">
+            <div class="font-normal text-2xl font-mono">
               {data.name}, {data.sys.country}
             </div>
           </div>

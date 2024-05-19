@@ -23,12 +23,21 @@ export default function Searchbar({ searchText }) {
               placeholder="e.g. London"
               onChange={changeHandler}
               name="search"
-              className="bg-white  peer-invalid:visible border border-slate-400 lg:text-lg rounded-md py-2 pl-5 sm:pl-0 pr-64 sm:pr-4 shadow-sm  focus:outline-none focus:ring-sky-500 focus:border-sky-300"
+              className="bg-white
+              px-2 py-2 
+                peer-invalid:visible border
+                 border-slate-400 
+                 lg:text-lg rounded-md
+                  pl-5 sm:pl-0
+                   pr-64 sm:pr-4 shadow-sm 
+                    focus:outline-none
+                     focus:ring-sky-500
+                      focus:border-sky-300"
             />
           </div>
           <div>
             <button
-              className="flex-shrink-0 bg-sky-500 ml-5 hover:bg-sky-700 px-10 font-mono text-lg py-2 rounded-md text-white "
+              className="flex-shrink-0 bg-sky-600 ml-5 hover:bg-sky-700 px-10 font-mono text-lg py-2 rounded-md text-white "
               type="submit"
             >
               Search Weather
